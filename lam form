@@ -20,12 +20,14 @@
              <input type ="submit" type="text" id="txtPassword" name ="textPassword" placeholder="Mật khẩu">
              <input type ="reset" type="text" id="txtPassword" name ="textPassword" placeholder="Mật khẩu">
             </form>
+            
         </div>
 
       </body>	 
 </html>
 
-style 2 c ss
+
+
 *{
     margin: 0;
     padding: 0;
@@ -39,7 +41,7 @@ div.container{
 form#frmLogin{
     background-color: rgb(0, 255, 76);
     padding: 20px;
-    border-radius: 7px;
+    border-radius: 5px;
 }
 h3.title{
     text-transform: uppercase;
@@ -64,5 +66,11 @@ label{
 }
 .but{
     color:rgb(25, 0, 255);
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 20px;
+
 }
+
 
