@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>In Bảng Cửu Chương</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style5.css">
+    </head>
+    <body>
+        <div class="container">
+            <form id="InBangCuuChuong">
+                
+                    <h2 class ="table">Bảng Cửu Chương</h2>
+        <div class="form-group">
+            <label for="table">nhập số</label>
+            <label class="form-control"text" id="txtns"placeholder="nhập số"required ></label>
+            <input class="but" type="submit" name= "sblogin" value="In">
+        </div>
+             <div id="kp">
+             </div>   
+            </form>
+            <script>
+                const = frInBangCuuChuong = document.getElementById["txtns"];
+
+                form.addEventListener("submit", function(e) {
+                    e.preventDefault
+                }
+                let kp="";
+                for(i=1;i<11;i++);
+            {
+                kp +="txtns" + "*" +i+ " = " + ("txtns*i")+ ""
+            }
+            document.getElementById("kp").innerHTML.kp;
+            </script>
+        </div>
+    </body>
+</html>
