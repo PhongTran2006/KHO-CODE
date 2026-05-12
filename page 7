@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm Hải sản</title>
+    <style>
+        #product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .price {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .btn-buy {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Danh sách sản phẩm hải sản</h1>
+<div id="product-list"></div>
+
+<script>
+const seafoodProducts = [
+    { id: 1, name: "Tôm Hùm Alaska", price: "850.000đ/kg", img: "assets/images/tomhum.jpg" },
+    { id: 2, name: "Cua Cà Mau", price: "450.000đ/kg", img: "assets/images/cuacamau.jpg" },
+    { id: 3, name: "Mực Lá Đại Dương", price: "320.000đ/kg", img: "assets/images/mucla.jpg" },
+    { id: 4, name: "Bào Ngư Hàn Quốc", price: "900.000đ/kg", img: "assets/images/baongu.jpg" },
+    { id: 5, name: "Cá Hồi Na Uy", price: "380.000đ/kg", img: "assets/images/cahoi.jpg" },
+    { id: 6, name: "Sò Dương Phú Quốc", price: "150.000đ/kg", img: "assets/images/soduong.jpg" },
+    { id: 7, name: "Ốc Hương", price: "280.000đ/kg", img: "assets/images/ochuong.jpg" },
+    { id: 8, name: "Ghẹ Xanh", price: "400.000đ/kg", img: "assets/images/ghexanh.jpg" },
+    { id: 9, name: "Cá Mú Đỏ", price: "600.000đ/kg", img: "assets/images/camudo.jpg" },
+    { id: 10, name: "Hàu Sữa Pháp", price: "120.000đ/kg", img: "assets/images/hausua.jpg" },
+];
+
+function displayProducts() {
+    const productList = document.getElementById('product-list');
+    productList.innerHTML = ''; // Xoá nội dung cũ trước khi thêm mới
+
+    seafoodProducts.forEach(product => {
+        // Tạo thẻ div cho product
+        const productCard = document.createElement('div');
+        productCard.classList.add('product-card');
+
+        // Tạo ảnh
+        const img = document.createElement('img');
+        img.src = product.img;
+        img.alt = product.name;
+
+        // Tạo tên sản phẩm
+        const name = document.createElement('h3');
+        name.textContent = product.name;
+
+        // Tạo giá
+        const price = document.createElement('p');
+        price.classList.add('price');
+        price.textContent = product.price;
+
+        // Tạo nút xem chi tiết
+        const btn = document.createElement('a');
+        btn.href = "#";
+        btn.classList.add('btn-buy');
+        btn.textContent = "Xem chi tiết";
+
+        // Thêm tất cả vào product card
+        productCard.appendChild(img);
+        productCard.appendChild(name);
+        productCard.appendChild(price);
+        productCard.appendChild(btn);
+
+        // Thêm product card vào danh sách
+        productList.appendChild(productCard);
+    });
+}
+
+// Chạy khi tải trang
+displayProducts();
+</script>
+
+</body>
+</html>
