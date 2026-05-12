@@ -1,0 +1,30 @@
+// Dữ liệu 10 sản phẩm hải sản
+const seafoodProducts = [
+    { id: 1, name: "Tôm Hùm Alaska", price: "850.000đ/kg", img: "assets/images/tomhum.jpg" },
+    { id: 2, name: "Cua Cà Mau", price: "450.000đ/kg", img: "assets/images/cuacamau.jpg" },
+    { id: 3, name: "Mực Lá Đại Dương", price: "320.000đ/kg", img: "assets/images/mucla.jpg" },
+    { id: 4, name: "Bào Ngư Hàn Quốc", price: "900.000đ/kg", img: "assets/images/baongu.jpg" },
+    { id: 5, name: "Cá Hồi Na Uy", price: "380.000đ/kg", img: "assets/images/cahoi.jpg" },
+    { id: 6, name: "Sò Dương Phú Quốc", price: "150.000đ/kg", img: "assets/images/soduong.jpg" },
+    { id: 7, name: "Ốc Hương", price: "280.000đ/kg", img: "assets/images/ochuong.jpg" },
+    { id: 8, name: "Ghẹ Xanh", price: "400.000đ/kg", img: "assets/images/ghexanh.jpg" },
+    { id: 9, name: "Cá Mú Đỏ", price: "600.000đ/kg", img: "assets/images/camudo.jpg" },
+    { id: 10, name: "Hàu Sữa Pháp", price: "120.000đ/kg", img: "assets/images/hausua.jpg" }
+];
+
+// Hàm hiển thị sản phẩm
+function displayProducts() {
+    const productList = document.getElementById('product-list');
+    
+    seafoodProducts.forEach(product => {
+        const productCard = `
+            <div class="product-card">
+                <img src="${product.img}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <p class="price">${product.price}</p>
+                <a href="#" class="btn-buy">Xem chi tiết</a>
+            </div>
+        `;
+        productList.innerHTML += productCard;
+    });
+}
