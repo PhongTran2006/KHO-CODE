@@ -1,0 +1,167 @@
+const seafoodProducts = [
+
+    {
+        id: 1,
+        name: "Tôm Hùm Alaska",
+        price: 850000,
+        img: "assets/images/tomhum.jpg",
+        rating: 5
+    },
+
+    {
+        id: 2,
+        name: "Cua Cà Mau",
+        price: 450000,
+        img: "assets/images/cuacamau.jpg",
+        rating: 4
+    },
+
+    {
+        id: 3,
+        name: "Mực Lá Đại Dương",
+        price: 320000,
+        img: "assets/images/mucla.jpg",
+        rating: 4
+    },
+
+    {
+        id: 4,
+        name: "Bào Ngư Hàn Quốc",
+        price: 900000,
+        img: "assets/images/baongu.jpg",
+        rating: 5
+    },
+
+    {
+        id: 5,
+        name: "Cá Hồi Na Uy",
+        price: 380000,
+        img: "assets/images/cahoi.jpg",
+        rating: 5
+    },
+
+    {
+        id: 6,
+        name: "Ốc Hương",
+        price: 280000,
+        img: "assets/images/ochuong.jpg",
+        rating: 5
+    },
+
+    {
+        id: 7,
+        name: "Ghẹ Xanh",
+        price: 400000,
+        img: "assets/images/ghexanh.jpg",
+        rating: 4
+    },
+
+    {
+        id: 8,
+        name: "Hàu Sữa Pháp",
+        price: 120000,
+        img: "assets/images/hausua.jpg",
+        rating: 4
+    },
+
+    {
+        id: 9,
+        name: "Sò Dương Phú Quốc",
+        price: 150000,
+        img: "assets/images/soduong.jpg",
+        rating: 4
+    },
+
+    {
+        id: 10,
+        name: "Cá Mú Đỏ",
+        price: 600000,
+        img: "assets/images/camudo.jpg",
+        rating: 5
+    }
+
+];  hãy thêm cho tôi nhiều chức năng cho code này 
+
+const seafoodProducts = [
+
+    {
+        id: 1,
+        name: "Tôm Hùm Alaska",
+        price: 850000,
+        img: "assets/images/tomhum.jpg",
+        rating: 5
+    },
+
+    {
+        id: 2,
+        name: "Cua Cà Mau",
+        price: 450000,
+        img: "assets/images/cuacamau.jpg",
+        rating: 4
+    },
+
+    {
+        id: 3,
+        name: "Mực Lá Đại Dương",
+        price: 320000,
+        img: "assets/images/mucla.jpg",
+        rating: 4
+    },
+
+    {
+        id: 4,
+        name: "Bào Ngư Hàn Quốc",
+        price: 900000,
+        img: "assets/images/baongu.jpg",
+        rating: 5
+    },
+
+    {
+        id: 5,
+        name: "Cá Hồi Na Uy",
+        price: 380000,
+        img: "assets/images/cahoi.jpg",
+        rating: 5
+    },
+
+    {
+        id: 6,
+        name: "Ốc Hương",
+        price: 280000,
+        img: "assets/images/ochuong.jpg",
+        rating: 5
+    },
+
+    {
+        id: 7,
+        name: "Ghẹ Xanh",
+        price: 400000,
+        img: "assets/images/ghexanh.jpg",
+        rating: 4
+    },
+
+    {
+        id: 8,
+        name: "Hàu Sữa Pháp",
+        price: 120000,
+        img: "assets/images/hausua.jpg",
+        rating: 4
+    },
+
+    {
+        id: 9,
+        name: "Sò Dương Phú Quốc",
+        price: 150000,
+        img: "assets/images/soduong.jpg",
+        rating: 4
+    },
+
+    {
+        id: 10,
+        name: "Cá Mú Đỏ",
+        price: 600000,
+        img: "assets/images/camudo.jpg",
+        rating: 5
+    }
+
+];  hãy thêm cho tôi nhiều chức năng cho code này 
